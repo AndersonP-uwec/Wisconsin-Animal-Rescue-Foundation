@@ -9,7 +9,7 @@
 </head>
 <main>
     <header>
-        <img src="" alt="Logo: a hand holding a floating paw print">
+        <img src="images/logo.png" alt="Logo: a hand holding a floating paw print">
         <form>
             <input type="text" placeholder="Search" name="search">
             <button type="submit">Go</button>
@@ -25,14 +25,238 @@
     </header>
 <body>
     <h1>Interested in Adopting or Fostering?</h1>
+    <ul><h2>Requirements: </h2></ul>
+    <li>Own your own home or have permission from the owner</li>
+    <li>Have a source of income</li>
+    <li>No previous or current charges related to committing violent acts</li>
+    <li>Be able to provide care for an animal</li>
+    <li>Fill out an application and pay the adoption fee</li>
     <form>
-        
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="mname">Middle Name</label><br>
+        <input type="text" id="mname" name="mname"><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+        <label for="st1">Street Address</label><br>
+        <input type="text" id="st1" name="st1" required><br>
+        <label for="st2">Street Address Line 2</label><br>
+        <input type="st2" id="st2" name="st2"><br>
+        <label for="city">City</label><br>
+        <input type="text" id="city" name="city" required><br>
+        <label for="state">State</label><br>
+        <select id="state" name="state" required>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">Washington DC</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+        </select><br>
+        <label for="zip">Zip Code</label><br>
+        <input type="text" id="zip" name="zip" required><br>
+        <label for="phone">Best Phone Number</label><br>
+        <input type="tel" id="phone" name="phone" required><br>
+        <label for="dob">Date of Birth</label><br>
+        <input type="date" id="dob" name="dob" required><br>
+        <label for="age">Age</label><br>
+        <input type="number" id="age" name="age" required><br>
+        <label for="prev">Have you Adopted from Here Before?</label><br>
+        <input type="text" id="prev" name="prev"><br>
+        <label for="ed">Education Level</label><br>
+        <select id="ed" name="ed">
+            <option value="no">Less than high school</option>
+            <option value="hs">High school/GED</option>
+            <option value="cs">Some college</option>
+            <option value="ts">Trade/Vocational school</option>
+            <option value="asc">Associate's Degree</option>
+            <option value="ba">Bachelor's Degree</option>
+            <option value="dr">Doctorate Degree</option>
+            <option value="mas">Master's Degree</option>
+        </select><br>
+        <label for="work">Employer Name</label><br>
+        <input type="text" id="work" name="work"><br>
+        <label for="emcity">City</label><br>
+        <input type="text" id="emcity" name="emcity"><br>
+        <label for="emstate">State</label><br>
+        <select id="emstate" name="emstate">
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">Washington DC</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+            </select><br>
+        <label for="emzip">Zip</label><br>
+        <input type="number" id="emzip" name="emzip"><br>
+        <label for="wph">Work Phone</label><br>
+        <input type="tel" id="wph" name="wph"><br>
+        <label for="inc">Estimated Monthly Income from any Source</label><br>
+        <input type="number" id="inc" name="inc" required><br>
+        <p>Interested in Adopting or Fostering?</p><br>
+        <input type="checkbox" id="adp" name="adp" value="Adoption"><br>
+        <label for="adp">Adoption</label><br>
+        <input type="checkbox" id="fos" name="fos" value="Fostering"><br>
+        <label for="fos">Fostering</label><br>
+        <p>Desired Type of Animal</p><br>
+        <input type="checkbox" id="cat" name="cat" value="Cat"><br>
+        <label for="cat">Cat</label><br>
+        <input type="checkbox" id="dog" name="dog" value="Dog"><br>
+        <label for="dog">Dog</label><br>
+        <input type="checkbox" id="sen" name="sen" value="Senior"><br>
+        <label for="sen">Senior Pet</label><br>
+        <input type="checkbox" id="sn" name="sn" value="Special Needs"><br>
+        <label for="sn">Special Needs Animal</label><br>
+        <input type="checkbox" id="kp" name="kp" value="Kittens/Puppies"><br>
+        <label for="kp">Kittens/Puppies</label><br>
+        <label for="afbrd">Any Breed Preference?</label><br>
+        <input type="text" id="afbrd" name="afbrd"><br>
+        <label for="sex">Any Sex Preference?</label><br>
+        <input type="text" id="sex" name="sex"><br>
+        <p>Weight Preference When Fully Grown</p><br>
+        <input type="radio" id="w15-" name="w15-" value="Under 15lbs"><br>
+        <label for="w15-">Under 15lbs</label><br>
+        <input type="radio" id="w25-" name="w25-" value="Between 15 and 25lbs"><br>
+        <label for="w25-">Between 15 and 25lbs</label><br>
+        <input type="radio" id="w50-" name="w50-" value="Between 25 and 50lbs"><br>
+        <label for="w50-">Between 25 and 50lbs</label><br>
+        <input type="radio" id="w50+" name="w50+" value="More than 50lbs"><br>
+        <label for="w50+">More than 50lbs</label><br>
+        <input type="radio" id="none" name="none" value="No Preference"><br>
+        <label for="none">No Preference</label><br>
+        <label for="needs">Any Specific Needs (hypoallergenic, good with kids, etc.)</label><br>
+        <input type="text" id="needs" name="needs"><br>
+        <label for="stay">Will the Animal be Inside or Outside?</label><br>
+        <input type="text" id="stay" name="stay" required><br>
+        <label for="cad">List All Current Adults in the Home</label><br>
+        <input type="text" id="cad" name="cad" required><br>
+        <label for="cch">List All Current or Expected Children in the Home (including ages)</label><br>
+        <input type="text" id="cch" name="cch" required><br>
+        <label for="cup">List All Current Pets in the Home (including ages)</label><br>
+        <input type="text" id="cup" name="cup" required><br>
+        <label for="petex">Describe any Previous Pet Experience</label><br>
+        <input type="text" id="petex" name="petex" required><br>
+        <label for="petre">List any Pet Restrictions for your Home</label><br>
+        <input type="text" id="petre" name="petre" required><br>
+        <label for="vet">List your Current or Intended Veterinary Office</label><br>
+        <input type="text" id="vet" name="vet" required><br>
+        <label for="refs">List the Names and Contact Information of Three References</label><br>
+        <input type="text" id="refs" name="refs" required><br>
+        <h3>Agreement Statement</h3>
+        <p>I certify that the statements made on this application are true and have been given voluntarily. I understand that this information may be disclosed to other parties, including for such purposes as criminal background checks, and I release WARF from any liability whatsoever for supplying such information. I also understand that I will have to pay an adoption fee if I am chosen to adopt. I agree to release and hold harmless WARF from and against any and all loss, damage, claims, liability, costs and expenses of any nature whatsoever, including without limitation attorney's fees and disbursements arising from or occasioned by my participation in WARF's programs. I fully understand and agree that filling out this appliation does not obligate the WARF to accept my request. I understand the risks inherent in handling animals and I accept these risks.</p>
+        <label for="agr">I Agree</label><br>
+        <input type="checkbox" id="agr" name="agr" required><br>
+        <input type="submit" value="Submit"><br>
     </form>
+    <div class="ready">
+    <h2>Call or Email Today to Set up an Appointment to Meet Your New Best Friend!</h2>
+    <h3>Adopt two pets or more and their adoption fees are halved! (Does not include spay/neuter deposits)</h3>
+    <img src="images/cat6.jpg" alt="A yellow and white cat with yellow eyes looking up and meowing"><h3>Meet Chester!</h3>
+    <p>Chester is a yellow and white neutered boy. Our vets estimate he is about 5 years old. He's very vocal and loves attention when he isn't napping. He's not the most active cat but he does enjoy supervised playtime with yarn and all things jingly. He gets along with every animal he meets and is very patient with children. Since he is already neutered, his adoption fee is only $35.</p>
+    <img src="images/dog6.jpg" alt="A brown and white large dog enjoying some outside time"><h3>Meet Roxie!</h3>
+    <p>Roxie is a brown and white large mixed breed sweetheart. She's not yet spayed and is estimated to be 2 years old. She loves going on walks and running outside so she will need a fair amount of outside time and energy. Roxie's good with other dogs, unsure how she is with cats. Until she's spayed, her adoption fee is $60 plus a $45 deposit that will be refunded once there is proof of her being spayed.</p>
+    <img src="images/cat7.jpg" alt="A grey-brown tabby with green eyes licks her lips"><h3>Meet Lucy!</h3>
+    <p>Lucy is a playful, spayed grey-brown tabby. She's estimated to be 6 years old but plays like a kitten. She has an allergy to grain so she will need specific food for it that we can recommend. She'd do best in a childfree home as she may scratch when playing unintentionally. Lucy also isn't fond of cats but loves dogs. Her adoption fee is only $35.</p>
+    <img src="images/dog7.jpg" alt="A grey-white Husky puppy sleeping"><h3>Meet Marsh!</h3>
+    <p>Marsh is a 3 month old Husky puppy. He will have to be neutered when he is 6-12 months old. As a Husky, he's very vocal. He also is very affectionate and playful. He will need lots of exercise and regular grooming. Marsh gets along with most dogs but is uncertain of cats. He'd do best with homes that have older children as he is untrained and growing large quickly. His adoption fee is $50 plus a deposit of $55 until neutered.</p>
+    <img src="images/cat8.jpg" alt="A chocolate-point Siamese mix cat with slightly crossed blue eyes looking into the camera and meowing"><h3>Meet Soot!</h3>
+    <p>Soot is a 6 month old chocolate-point Siamese mix. He will need to be neutered soon. He is pretty active for a cat and very food motivated. Portions will need to be monitored for him. He likes a lot of exercise but doesn't care for being outside. Soot is also pretty independent but likes to spend time in the same room as people. He loves playing with other cats so we'd recommend he not be the only cat. His adoption fee is $30 plus a deposit of $30 until neutered.</p>
+    </div>
 </body>
 <footer>
-    <img src="" alt="" href="">
-    <img src="" alt="" href="">
-    <img src="" alt="" href="">
+    <img src="images/fb.svg" alt="Facebook Logo and Link" href="https://www.facebook.com/">
+    <img src="images/insta.svg" alt="Instagram Logo and Link" href="https://www.instagram.com">
+    <img src="images/pin.svg" alt="Pinterest Logo and Link" href="https://www.pinterest.com">
 </footer>
 </main>
 </html>
