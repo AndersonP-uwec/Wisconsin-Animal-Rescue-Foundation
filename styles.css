@@ -1,0 +1,229 @@
+header>img{
+    width: 65px;
+    height: 65px;
+}
+body{
+    background-color: white;
+}
+header{
+    background-color: #cdedf6;
+    border: solid 1px black;
+}
+header>nav{
+    display: inline-block;
+}
+header>form{
+    display: inline;
+    padding: 25px;
+}
+.menu{
+    background-color: #cdedf6;
+    color: #0e103d;
+    padding: 16px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    cursor: pointer;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.pages{
+    display: none;
+    position: absolute;
+    background-color: #cdedf6;
+}
+.pages a{
+    color: #0e103d;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid black;
+}
+.pages a:hover{
+    background-color: #798086;
+}
+.dropdown:hover .pages{
+    display: block;
+}
+.dropdown:hover .menu{
+    background-color: #798086;
+}
+.gallery, .g2{
+    background-color: white;
+}
+.gallery img, .g2 img{
+    width: 250px;
+    height: 250px;
+    border: solid #cdedf6 5px;
+    display: inline-block;
+    margin-left: 25%;
+}
+footer{
+    background-color: #cdedf6;
+    height: 50px;
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+}
+.end>a{
+    justify-content: space-between;
+}
+.end>a:hover{
+    background-color: #798086;
+}
+h1, h2, h3, h4, h5, p, li{
+    color: #0e103d;
+}
+h1, h2{
+    font-family: 'Almarai Bold 700', sans-serif;
+}
+h3, h4, h5{
+    font-family: 'Almarai Regular 400', sans-serif;
+}
+p, li{
+    font-family: 'Almarai Light 300', sans-serif;
+}
+h1, h2, h3, h4, h5{
+    text-align: center;
+}
+li{
+    padding: 10px;
+    font-size: medium;
+}
+form{
+    color: #0e103d;
+}
+table{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #0e103d;
+    margin-bottom: 10px;
+}
+.here{
+    background-color: #cdedf6;
+    color: #0e103d;
+    padding: 10px;
+    border: solid black 2px;
+    font-size: large;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 15%;
+}
+.active,
+.here:hover{
+    background-color: #798086;
+}
+.adopt{
+    display: none;
+    position: relative;
+    width: 100px;
+}
+.adopt>form{
+    background-color: #cdedf6;
+    color: #0e103d;
+    display: block;
+    width: 200%;
+    margin-left: 120%;
+}
+.ready>img{
+    width: 350px;
+    margin-left: 25%;
+    border: solid #cdedf6 5px;
+}
+.contact>img{
+    border: 5px solid #cdedf6;
+    width: 95%;
+    height: 70%;
+    margin-top: 20px;
+}
+label{
+    display: inline-block;
+}
+.volunteer>form, .donate>form, .fix>form, .surrender>form{
+    display: block;
+    width: 100px;
+    margin-left: 25%;
+    color: #0e103d;
+    background-color: #cdedf6;
+    width: 25%;
+    font-family: 'Almarai Light 300', sans-serif;
+}
+input[type="submit"]{
+    background-color: #cdedf6;
+    color: #0e103d;
+}
+input[type="submit"]:hover{
+    background-color: #798086;
+}
+input{
+    border: 2px solid black;
+    color: #0e103d;
+}
+input:hover{
+    background-color: #798086;
+}
+input:focus{
+    background-color: white;
+}
+@media screen and (min-width: 750px){
+    .gallery>img, .g2>img{
+        width: 300px;
+        height: 300px;
+        margin-left: 30%;
+    }
+    header>img{
+        width: 100px;
+        height: 100px;
+    }
+    header{
+        border: solid 3px black;
+        width: 99%;
+    }
+    header>form{
+        padding: 400px;
+    }
+    .menu{
+        width: 119px;
+        height: 90px;
+        font-size: 25px;
+        border: 3px solid black;
+        border-bottom: none;
+        border-right: none;
+        border-collapse: collapse;
+    }
+    footer{
+        width: 99%;
+    }
+    p{
+        font-size: larger;
+    }
+    .here{
+        margin-left: 35%;
+    }
+    .adopt>form{
+        margin-left: 436%;
+        width: 315%;
+    }
+    .contact>img{
+        width: 50%;
+        height: 50%;
+        margin-left: 25%;
+    }
+    li{
+        font-size: larger;
+    }
+    table{
+        margin-bottom: 25px;
+    }
+    .surrender>form{
+        margin-top: 25px;
+    }
+    .ready{
+        margin-top: 25px;
+    }
+
+}
+
