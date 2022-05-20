@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surrendering</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+<body>
 <main>
     <header>
         <img src="images/logo.png" alt="Logo: a hand holding a floating paw print">
@@ -14,18 +24,21 @@
             <input type="text" placeholder="Search" name="search">
             <button type="submit">Go</button>
         </form>
-        <nav>
+        <div class="dropdown">
+        <button class="menu">Menu</button>
+        <div class="pages"><nav>
             <a href="home.html">Home</a>
             <a href="about.html">About</a>
             <a href="adoption.html">Adoption and Fostering</a>
             <a href="help.html">How to Help</a>
-            <a href="surrender">Surrendering</a>
+            <a href="surrender.html">Surrendering</a>
             <a href="contact.html">Contact Us</a>
-        </nav>
+        </nav></div>
+    </div>
     </header>
-<body>
+    <div class="surrender">
     <h1>Surrendering</h1>
-    <p>We understand that sometimes you must give up a beloved animal and we aim to make the difficult process easier. Simply fill out a form and you will receive information about when to come to the shelter to discuss the specifics.</p>
+    <p>We understand that sometimes you must give up a beloved animal and we aim to make the difficult process easier. Simply fill out this form and you will receive information about when to come to the shelter to discuss the specifics.</p>
     <form>
         <label for="fname">First Name</label><br>
         <input type="text" id="fname" name="fname" required><br>
@@ -35,12 +48,12 @@
         <input type="text" id="lname" name="lname" required><br>
         <label for="st1">Street Address</label><br>
         <input type="text" id="st1" name="st1" required><br>
-        <label for="st2">Street Address Line 2</label><br>
-        <input type="st2" id="st2" name="st2"><br>
+        <label for="street2">Street Address Line 2</label><br>
+        <input type="text" id="street2" name="street2"><br>
         <label for="city">City</label><br>
         <input type="text" id="city" name="city" required><br>
         <label for="state">State</label><br>
-        <select id="state" name="state" required>
+        <select id="state" name="state" size="50" required>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
@@ -107,13 +120,17 @@
         <input type="text" id="desc" name="desc" required><br>
         <label for="why">Reason for Surrender</label><br>
         <input type="text" id="why" name="why" required><br>
+        <br>
         <input type="submit" value="Request Surrender Information"><br>
     </form>
-</body>
-<footer>
-    <img src="images/fb.svg" alt="Facebook Logo and Link" href="https://www.facebook.com/">
-    <img src="images/insta.svg" alt="Instagram Logo and Link" href="https://www.instagram.com">
-    <img src="images/pin.svg" alt="Pinterest Logo and Link" href="https://www.pinterest.com">
-</footer>
+    </div>
 </main>
+<footer>
+    <div class="end">
+        <a href="https://www.fb.com/"><img src="images/fb.svg" alt="Facebook Logo and Link" width="50" height="50"></a>
+        <a href="https://www.instagram.com"><img src="images/insta.svg" alt="Instagram Logo and Link" width="50" height="50"></a>
+        <a href="https://www.pinterest.com"><img src="images/pin.svg" alt="Pinterest Logo and Link" width="50" height="50"></a>
+    </div>
+</footer>
+</body>
 </html>
