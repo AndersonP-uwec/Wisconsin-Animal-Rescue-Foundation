@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to Help</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+<body>
 <main>
     <header>
         <img src="images/logo.png" alt="Logo: a hand holding a floating paw print">
@@ -14,24 +24,26 @@
             <input type="text" placeholder="Search" name="search">
             <button type="submit">Go</button>
         </form>
-        <nav>
+        <div class="dropdown">
+        <button class="menu">Menu</button>
+        <div class="pages"><nav>
             <a href="home.html">Home</a>
             <a href="about.html">About</a>
             <a href="adoption.html">Adoption and Fostering</a>
             <a href="help.html">How to Help</a>
-            <a href="surrender">Surrendering</a>
+            <a href="surrender.html">Surrendering</a>
             <a href="contact.html">Contact Us</a>
-        </nav>
+        </nav></div>
+    </div>
     </header>
-<body>
     <div class="volunteer">
         <h2>Volunteering</h2>
-        <ul>Requirements</ul>
-        <li>Be 16 years or older</li>
+        <h3>Requirements</h3>
+        <ul><li>Be 16 years or older</li>
         <li>Have consent from your guardian(s) if under 18</li>
         <li>Be able to lift up to 25 pounds, with or without accomodations</li>
-        <li>Follow all shelter policies</li>
-        <h3><ul>To Apply:</ul></h3>
+        <li>Follow all shelter policies</li></ul>
+        <h3>To Apply:</h3>
         <form>
             <label for="fname">First Name</label><br>
             <input type="text" id="fname" name="fname" required><br>
@@ -42,11 +54,11 @@
             <label for="st1">Street Address</label><br>
             <input type="text" id="st1" name="st1" required><br>
             <label for="st2">Street Address Line 2</label><br>
-            <input type="st2" id="st2" name="st2"><br>
+            <input type="text" id="st2" name="st2"><br>
             <label for="city">City</label><br>
             <input type="text" id="city" name="city" required><br>
             <label for="state">State</label><br>
-            <select id="state" name="state" required>
+            <select id="state" name="state" size="50" required>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -135,7 +147,7 @@
             <label for="emcity">City</label><br>
             <input type="text" id="emcity" name="emcity"><br>
             <label for="emstate">State</label><br>
-            <select id="emstate" name="emstate">
+            <select id="emstate" name="emstate" size="50">
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -198,15 +210,14 @@
             <input type="text" id="sk" name="sk"><br>
             <label for="ema">Email Address</label><br>
             <input type="email" id="ema" name="ema"><br>
-            <p>Would you Like to be Subscribed to Our Newsletter?</p><br>
             <input type="checkbox" id="sub" name="sub"><br>
-            <label for="sub">Yes</label><br>
+            <label for="sub">I would like to be subscribed to the newsletter</label><br>
             <label for="hrs">Availability for Volunteering</label><br>
             <input type="text" id="hrs" name="hrs" required><br>
             <label for="hpp">Number of Hours per Period</label><br>
             <input type="number" id="hpp" name="hpp" required><br>
             <label for="p">Period Length</label><br>
-            <select id="p" name="p" required>
+            <select id="p" name="p" size="5" required>
                 <option value="dl">Daily</option>
                 <option value="wl">Weekly</option>
                 <option value="ml">Monthly</option>
@@ -223,7 +234,7 @@
             <label for="ecity">City</label><br>
             <input type="text" id="ecity" name="ecity"><br>
             <label for="esta">State</label><br>
-            <select id="esta" name="esta">
+            <select id="esta" name="esta" size="50">
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -286,26 +297,27 @@
             <input type="text" id="vp" name="vp"><br>
             <label for="usn">Create a Username</label><br>
             <input type="text" id="usn" name="usn" required>
+            <p><em>Password must be between 8 and 25 characters long</em></p>
             <label for="pw">Create a Password</label><br>
-            <p><em>Must be between 8 and 25 characters long</em></p>
-            <input type="password" id="pw" name="pw" min="8" max="25" required><br>
+            <input type="password" id="pw" name="pw" required><br>
             <label for="cpw">Confirm Password</label><br>
-            <input type="password" id="cpw" name="cpw" min="8" max="25" required
+            <input type="password" id="cpw" name="cpw" required
             pattern=pw><br>
             <h3>Agreement Statement</h3>
             <p>I certify that the statements made on this application are true and have been given voluntarily. I understand that this information may be disclosed to other parties, including for such purposes as criminal background checks, and I release WARF from any liability whatsoever for supplying such information. I also understand I will not be paid for my services as a volunteer; In consideration of WARF accepting my application, or my child's, for participation in WARF programs. I agree to release and hold harmless WARF from and against any and all loss, damage, claims, liability, costs and expenses of any nature whatsoever, including without limitation attorney's fees and disbursements arising from or occasioned by my participation in WARF's programs. I fully understand and agree that filling out this volunteer appliation does not obligate the WARF to accept my request. I understand the risks inherent in handling animals and I accept these risks. I agree to hold all information shared with me while volunteering at WARF in strict confidence. I agree that WARF may photograph my participation in this program and I hereby release any such photographs to WARF for use in its programs, publications, and purpose.</p>
             <label for="agr">I Agree</label><br>
             <input type="checkbox" id="agr" name="agr" required><br>
+            <br>
             <input type="submit" value="Submit"><br>
         </form>
     </div>
     <div class="needs">
-        <ul><h2>Shelter Wishlist</h2></ul>
-        <li>Blankets</li>
+        <h2>Shelter Wishlist</h2>
+        <ul><li>Blankets</li>
         <li>Toys</li>
         <li>Dog and Cat Food (Unopened)</li>
         <li>Leads and Collars</li>
-        <li>Treats (Unopened)</li>
+        <li>Treats (Unopened)</li></ul>
     </div>
     <div class="donate">
         <h2>Donations</h2>
@@ -313,7 +325,7 @@
             <label for="dn">Donor Name</label><br>
             <input type="text" id="dn" name="dn"><br>
             <label for="oft">Frequency of Donation</label><br>
-            <select id="oft" name="oft" required>
+            <select id="oft" name="oft" size="4" required>
                 <option value="onc">Once Only</option>
                 <option value="mon">Monthly</option>
                 <option value="qr">Quarterly</option>
@@ -327,28 +339,31 @@
             <input type="date" id="exp" name="exp" required><br>
             <label for="bz">Billing Zip Code</label><br>
             <input type="number" id="bz" name="bz" required><br>
+            <label for="dem">Email (for receipt)</label><br>
+            <input type="email" id="dem" name="dem" required><br>
+            <br>
             <input type="submit" value="Donate"><br>
         </form>
     </div>
     <div class="fix">
         <h2>Spay and Neuter Vouchers</h2>
         <p>We provide low-cost spay and neuter vouchers to pet owners experiencing financial difficulty.</p>
-        <h3>To apply: </h3>
+        <h3>To Apply: </h3>
         <form>
-            <label for="fname">First Name</label><br>
-            <input type="text" id="fname" name="fname" required><br>
-            <label for="mname">Middle Name</label><br>
-            <input type="text" id="mname" name="mname"><br>
-            <label for="lname">Last Name</label><br>
-            <input type="text" id="lname" name="lname" required><br>
-            <label for="st1">Street Address</label><br>
-            <input type="text" id="st1" name="st1" required><br>
-            <label for="st2">Street Address Line 2</label><br>
-            <input type="st2" id="st2" name="st2"><br>
-            <label for="city">City</label><br>
-            <input type="text" id="city" name="city" required><br>
-            <label for="state">State</label><br>
-            <select id="state" name="state" required>
+            <label for="finame">First Name</label><br>
+            <input type="text" id="finame" name="finame" required><br>
+            <label for="miname">Middle Name</label><br>
+            <input type="text" id="miname" name="miname"><br>
+            <label for="laname">Last Name</label><br>
+            <input type="text" id="laname" name="laname" required><br>
+            <label for="stone">Street Address</label><br>
+            <input type="text" id="stone" name="stone" required><br>
+            <label for="str2">Street Address Line 2</label><br>
+            <input type="text" id="str2" name="str2"><br>
+            <label for="city2">City</label><br>
+            <input type="text" id="city2" name="city2" required><br>
+            <label for="state2">State</label><br>
+            <select id="state2" name="state2" size="50" required>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -401,20 +416,23 @@
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
             </select><br>
-            <label for="zip">Zip Code</label><br>
-            <input type="text" id="zip" name="zip" required><br>
-            <label for="phone">Best Phone Number</label><br>
-            <input type="tel" id="phone" name="phone" required><br>
+            <label for="zip2">Zip Code</label><br>
+            <input type="number" id="zip2" name="zip2" required><br>
+            <label for="phone2">Best Phone Number</label><br>
+            <input type="tel" id="phone2" name="phone2" required><br>
             <label for="call">When are you Available for a Phone Call?</label><br>
             <input type="datetime-local" id="call" name="call" required><br>
+            <br>
             <input type="submit" value="Request Phone Appointment"><br>
         </form>
     </div>
-</body>
-<footer>
-    <img src="images/fb.svg" alt="Facebook Logo and Link" href="https://www.facebook.com/">
-    <img src="images/insta.svg" alt="Instagram Logo and Link" href="https://www.instagram.com">
-    <img src="images/pin.svg" alt="Pinterest Logo and Link" href="https://www.pinterest.com">
-</footer>
 </main>
+<footer>
+    <div class="end">
+        <a href="https://www.fb.com/"><img src="images/fb.svg" alt="Facebook Logo and Link" width="50" height="50"></a>
+        <a href="https://www.instagram.com"><img src="images/insta.svg" alt="Instagram Logo and Link" width="50" height="50"></a>
+        <a href="https://www.pinterest.com"><img src="images/pin.svg" alt="Pinterest Logo and Link" width="50" height="50"></a>
+    </div>
+</footer>
+</body>
 </html>
