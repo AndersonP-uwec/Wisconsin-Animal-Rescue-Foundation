@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+<body>
 <main>
     <header>
         <img src="images/logo.png" alt="Logo: a hand holding a floating paw print">
@@ -14,41 +24,39 @@
             <input type="text" placeholder="Search" name="search">
             <button type="submit">Go</button>
         </form>
-        <nav>
+        <div class="dropdown">
+        <button class="menu">Menu</button>
+        <div class="pages"><nav>
             <a href="home.html">Home</a>
             <a href="about.html">About</a>
             <a href="adoption.html">Adoption and Fostering</a>
             <a href="help.html">How to Help</a>
-            <a href="surrender">Surrendering</a>
+            <a href="surrender.html">Surrendering</a>
             <a href="contact.html">Contact Us</a>
-        </nav>
+        </nav></div>
+    </div>
     </header>
-<body>
     <h1>Our Story</h1>
     <p>The Wisconsin Animal Rescue Foundation has been helping abused, neglected, stray, and unwanted animals since 1999. Our mission has always been to do all that we can to ensure a better existence for any animal in need, and we abide by it to this day. Our founder, Sam Jeffers, has always had a passion for caring for animals, so they purchased an unused building in January of 1999 and converted it nearly single-handedly into the vibrant shelter it is today.</p>
     <div class="hours">
         <table>
-            <tr>
-                <th colspan="7">Hours</th>
-            </tr>
-            <tr>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-                <th>Saturday</th>
-                <th>Sunday</th>
-            </tr>
-            <tr>
-                <td>7 am - 8 pm</td>
-                <td>7 am - 8 pm</td>
-                <td>7 am - 8 pm</td>
-                <td>7 am - 8 pm</td>
-                <td>7 am - 10 pm</td>
-                <td>7 am - 10 pm</td>
-                <td>7 am - 4 pm</td>
-            </tr>
+            <caption>Hours</caption>
+            <tbody>
+                <tr><th>Monday</th>
+                <td>7 am - 8 pm</td></tr>
+                <tr><th>Tuesday</th>
+                <td>7 am - 8 pm</td></tr>
+                <tr><th>Wednesday</th>
+                <td>7 am - 8 pm</td></tr>
+                <tr><th>Thursday</th>
+                <td>7 am - 8 pm</td></tr>
+                <tr><th>Friday</th>
+                <td>7 am - 10 pm</td></tr>
+                <tr><th>Saturday</th>
+                <td>7 am - 10 pm</td></tr>
+                <tr><th>Sunday</th>
+                <td>7 am - 4 pm</td></tr>
+            </tbody>
         </table>
     </div>
     <div class="g2">
@@ -57,11 +65,13 @@
         <img src="images/cat5.jpg" alt="A fluffy brown-grey tabby cat with green eyes laying and looking at the camera">
         <img src="images/dog5.jpg" alt="A senior Golden Retriever with a tennis ball in his mouth">
     </div>
-</body>
-<footer>
-    <img src="images/fb.svg" alt="Facebook Logo and Link" href="https://www.facebook.com/">
-    <img src="images/insta.svg" alt="Instagram Logo and Link" href="https://www.instagram.com">
-    <img src="images/pin.svg" alt="Pinterest Logo and Link" href="https://www.pinterest.com">
-</footer>
 </main>
+<footer>
+    <div class="end">
+        <a href="https://www.fb.com/"><img src="images/fb.svg" alt="Facebook Logo and Link" width="50" height="50"></a>
+        <a href="https://www.instagram.com"><img src="images/insta.svg" alt="Instagram Logo and Link" width="50" height="50"></a>
+        <a href="https://www.pinterest.com"><img src="images/pin.svg" alt="Pinterest Logo and Link" width="50" height="50"></a>
+    </div>
+</footer>
+</body>
 </html>
