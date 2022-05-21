@@ -63,7 +63,7 @@ header>form{
 footer{
     background-color: #cdedf6;
     height: 50px;
-    width: 98%;
+    width: 95%;
     display: inline-block;
     margin-top: 20px;
 }
@@ -195,7 +195,7 @@ input:focus{
         border-collapse: collapse;
     }
     footer{
-        width: 99%;
+        width: 95%;
     }
     p{
         font-size: larger;
